@@ -5,7 +5,7 @@ from language import Program
 
 
 def program_from_str(s):
-    return Program([x.rstrip() for x in s.split("\n") if len(x) > 0])
+    return Program.create_program([x.rstrip() for x in s.split("\n") if len(x) > 0])
 
 
 def run_from_disk(path):
